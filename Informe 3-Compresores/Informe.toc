@@ -1,0 +1,15 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{1}{section.1}
+\contentsline {section}{\numberline {2}Objetivos}{1}{section.2}
+\contentsline {section}{\numberline {3}Antecedentes}{1}{section.3}
+\contentsline {subsection}{\numberline {3.1}Gas ideal}{1}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Coeficiente politr\IeC {\'o}pico}{1}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Compresor}{1}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Equipo}{2}{subsection.3.4}
+\contentsline {section}{\numberline {4}Metodolog\IeC {\'\i }a}{3}{section.4}
+\contentsline {section}{\numberline {5}Memoria de c\IeC {\'a}lculo}{3}{section.5}
+\contentsline {section}{\numberline {6}Resultados}{4}{section.6}
+\contentsline {section}{\numberline {7}An\IeC {\'a}lisis de resultados}{6}{section.7}
+\contentsline {section}{\numberline {8}Conclusiones}{7}{section.8}
+\contentsline {section}{\numberline {9}Anexo}{8}{section.9}
+\contentsline {section}{Referencias}{10}{table.caption.10}
