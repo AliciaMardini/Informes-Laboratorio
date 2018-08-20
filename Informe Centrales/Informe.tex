@@ -1,0 +1,210 @@
+% ---------------PLANTILLA INFORMES-------------- %
+
+%---------Preambulo-------
+\documentclass[11pt,letterpaper]{extarticle}        % Clase
+
+
+\usepackage[utf8]{inputenc}                      % Codificación UTF-8
+\usepackage[spanish]{babel}                      % Idioma del documento
+\usepackage[left=2cm,right=2cm,bottom=3cm,top=2.5cm]{geometry}  % Dimesiones
+
+
+% --------------------------LIBRERIAS-------------------------- %
+
+\usepackage{enumitem}               % Enumeracion
+\usepackage{fancyhdr}               % Encabezados y pies de pagina
+\usepackage[ampersand]{easylist}    % Listas
+\usepackage{amsmath}                % Fórmulas matemáticas
+\usepackage{amssymb}                % Símbolos matemáticos
+\usepackage{caption}                % Leyendas
+\usepackage{color}                  % Colores
+\usepackage{fancyhdr}               % Encabezados y pié de páginas
+\usepackage{float}                  % Administrador de posiciones de objetos
+\usepackage{geometry}               % Dimensiones y geometría del documento
+\usepackage{graphicx}               % Propiedades extra para los gráficos
+\usepackage[hidelinks]{hyperref}    % Permite añadir enlaces y referencias
+\usepackage[makeroom]{cancel}       % Cancelar términos en fórmulas
+\usepackage[version=4]{mhchem}      % Fórmulas químicas
+\usepackage{multicol}               % Múltiples columnas
+\usepackage{lipsum}                 % Permite crear textos dummy
+\usepackage{longtable}              % Permite utilizar tablas en varias hojas
+\usepackage{listings}               % Permite añadir código fuente
+\usepackage{setspace}               % Cambia el espacio entre líneas
+%\usepackage{subfig}
+\usepackage{subfig}              % Permite agrupar imágenes
+\usepackage{titlesec}               % Cambia el estilo de los títulos
+\usepackage{url}                    % Permite añadir enlaces
+\usepackage{wrapfig}                % Permite comprimir imágenes
+
+% LIBRERÍAS DEPENDIENTES
+\usepackage{epstopdf}               % Convierte archivos .eps a pdf
+\usepackage{multirow}               % Añade nuevas opciones a las tablas
+\makeatletter
+
+% INFORMACIÓN DEL DOCUMENTO
+\newcommand{\nombredelinforme}{Pruebas en una Máquina de
+Refrigeración Mecánica}
+\newcommand{\fecharealizacion}{\today}
+\newcommand{\fechaentrega}{\today}
+\newcommand{\nombreuniversidad}{Universidad de Chile}
+\newcommand{\nombrefacultad}{Facultad de Ciencias Físicas y Matemáticas}
+\newcommand{\departamentouniversidad}{Departamento de Ingeniería Mecánica}
+\newcommand{\imagendeldepartamento}{images/departamentos/dimec}
+\newcommand{\imagendeldepartamentoescala}{0.29}
+\newcommand{\localizacionuniversidad}{Santiago, Chile}
+\newcommand{\nombredelcurso}{Laboratorio de Máquinas}
+\newcommand{\codigodelcurso}{ME5301}
+
+
+
+% CONFIGURACIONES
+\newcommand{\tiporeferencias}{apa}                  % Tipo de referencias
+\newcommand{\nombreltformulas}{Lista de Fórmulas}   % Nombre de la lista de fórmulas
+\newcommand{\nombrelttablas}{Lista de Tablas}       % Nombre de la lista de tablas
+\newcommand{\nombreltfiguras}{Lista de Figuras}     % Nombre de la lista de figuras
+\newcommand{\nombreltcontend}{Índice de Contenidos} % Nombre del índice de contenidos
+\newcommand{\nombreltwtablas}{Tabla}                % Nombre de las tablas
+\newcommand{\nombreltwfigura}{Figura}               % Nombre de las figuras
+\numberwithin{equation}{section}                    % Ecuaciones con numero de seccion
+
+% -------------------------FUNCIONES ESPECIALES------------------------- %
+\newcommand{\grados}{^{\circ}}                      % Circulo superior para grados
+\newcommand{\quotes}[1]{``#1''}                     % Citas
+\newcommand{\quotesit}[1]{\textit{\quotes{#1}}}     % Citas italico
+
+% ------ FORMATO ------------%
+
+\fancypagestyle{Portada}{
+\fancyhead[L] {\nombreuniversidad \\ \nombrefacultad \\ \nombredelcurso \: \codigodelcurso }
+\fancyhead[R]{\includegraphics[scale=\imagendeldepartamentoescala]{\imagendeldepartamento}}
+\cfoot{}
+}
+
+\fancypagestyle{NoPortadaNoEnumerada}{
+\fancyhead[L] {\nombredelcurso \: \codigodelcurso \\ \nombredelinforme}
+\fancyhead[R]{\nombreuniversidad \\ \departamentouniversidad}
+\cfoot{}
+}
+
+\fancypagestyle{NoPortada}{
+\fancyhead[L] {\nombredelcurso \: \codigodelcurso \\ \nombredelinforme}
+\fancyhead[R]{\nombreuniversidad \\ \departamentouniversidad}
+\cfoot{\thepage}
+}
+
+
+
+
+
+
+% --------------------------------DOCUMENTO-------------------------------- %
+% INICIO DEL DOCUMENTO
+\begin{document}
+
+%BEGIN_FOLD
+% PORTADA
+\newpage
+\pagestyle{fancy}
+\thispagestyle{Portada}
+\vspace*{5cm}
+\begin{center}
+	\vspace{1cm}
+	\noindent\rule{\linewidth}{0.4pt}\\
+	\Huge {\textbf{\nombredelinforme}}
+		\vspace{0.3cm} 
+	\noindent\rule{\linewidth}{0.3pt}
+\end{center}
+\vfill
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\begin{minipage}{0.965\textwidth}
+	\begin{flushright}
+		\begin{tabular}{ll}
+			Alumno: 
+				& \begin{tabular}[t]{@{}l@{}}
+					Daniel Mardini González\\
+				\end{tabular} \\
+			Curso:
+				& \nombredelcurso \\
+			Código:
+				& \codigodelcurso \\
+			Profesor: 
+				& \begin{tabular}[t]{@{}l@{}}
+					Ricardo Díaz S.\\
+				\end{tabular} \\
+			
+			\multicolumn{2}{l}{Ayudante del laboratorio: Pedro Pino T.} \\
+			& \\
+			\multicolumn{2}{l}{Fecha de entrega: \fechaentrega} \\
+			\multicolumn{2}{l}{\localizacionuniversidad}
+		\end{tabular}
+	\end{flushright}
+\end{minipage}
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\newpage
+\renewcommand{\listfigurename}{\nombreltfiguras}    % Nombre del índice de figuras
+\renewcommand{\listtablename}{\nombrelttablas}      % Nombre del índice de tablas
+\renewcommand{\contentsname}{\nombreltcontend}      % Nombre del índice
+\renewcommand{\tablename}{\nombreltwtablas}         % Nombre de la leyenda de las tablas
+\renewcommand{\figurename}{\nombreltwfigura}        % Nombre de la leyenda de las figuras
+\pagestyle{fancy}
+\thispagestyle{NoPortadaNoEnumerada}
+
+% TABLA DE CONTENIDOS
+\newpage
+\tableofcontents        % Tabla de contenidos
+\listoffigures          % Índice de figuras
+\listoftables           % Índice de tablas
+
+
+\newpage
+\setcounter{page}{1}
+\thispagestyle{NoPortada}
+
+\section{Introducción}
+\section{Objetivos}
+\section{Antecedentes}
+\section{Metodología}
+\section{Memoria de cálculo}
+\section{Análisis de resultados}
+\section{Conclusiones}
+
+
+
+
+
+
+
+
+
+
+		% REFERENCIAS
+\newpage
+\begin{thebibliography}{99}
+	\addcontentsline{toc}{section}{Referencias}
+	
+	\bibitem{pjd} 
+		Pedro, Juan y Diego. 
+		\textit{Como hacer informes en \LaTeX\.}. 
+		Universidad de Chile, Facultad de Ciencias Físicas y Matemáticas, 2016.
+	
+	\bibitem{einstein}
+		\hbadness=10000 El mismísimo Albert Einstein. 
+		\textit{Otro titulo complicado e interesante}. 
+		Análisis de físicas de informes, 322(10):891–921, 1905.
+	
+	\bibitem{ucursos} 
+		También puedes agregar enlaces.
+		\textit{U-Cursos al fin conoció \LaTeX.}
+		2016.
+		\\\url{https://www.u-cursos.cl/}
+	
+	\bibitem{conversortabla}
+		Tables Generator.
+		\textit{Convierte fácilmente tus tablas, o crea unas con un intuitivo editor de tablas.}
+		\\\url{http://www.tablesgenerator.com/}
+	
+\end{thebibliography}
+\end{document}
+

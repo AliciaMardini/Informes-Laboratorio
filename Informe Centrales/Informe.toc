@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{1}{section.1}
+\contentsline {section}{\numberline {2}Objetivos}{1}{section.2}
+\contentsline {section}{\numberline {3}Antecedentes}{1}{section.3}
+\contentsline {section}{\numberline {4}Metodolog\IeC {\'\i }a}{1}{section.4}
+\contentsline {section}{\numberline {5}Memoria de c\IeC {\'a}lculo}{1}{section.5}
+\contentsline {section}{\numberline {6}An\IeC {\'a}lisis de resultados}{1}{section.6}
+\contentsline {section}{\numberline {7}Conclusiones}{1}{section.7}
+\contentsline {section}{Referencias}{2}{section.7}
